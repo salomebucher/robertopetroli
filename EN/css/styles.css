@@ -24,6 +24,13 @@ body {
   background-image: url('../images/about.webp'); background-position: right;
 }
 
+#media {
+    background-image: url('../images/media.webp'); 
+    background-size:cover;
+}
+
+
+
 /** HEADER **/
 
 
@@ -36,6 +43,7 @@ body {
     text-align: center;
     margin-bottom: 0px;
     border: 0px solid black;
+    z-index: 5;
     
 }
 
@@ -317,9 +325,10 @@ margin-right:auto;
 }
 #abouttext p {
     font-size: 1.4em;
-    font-family: 'Work Sans', sans-serif;
+       font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     margin-top: 20px;
+     z-index: -5;
 
 }
 
