@@ -10,9 +10,9 @@
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-       <link href="https://fonts.googleapis.com/css?family=Poiret+One|Work+Sans:400" rel="stylesheet">
-       	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-		<link href="css/bootstrap-player.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One|Work+Sans:400" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+        <link href="css/bootstrap-player.css" rel="stylesheet">
 
 
     </head>
@@ -33,12 +33,12 @@
                     <div id="collapsable-nav" class="collapse navbar-collapse">
                         <ul id="nav-list" class="nav navbar-nav">
                             <li>
-                                <a href="/index.html">Home</a>
+                                <a href="./index.html">Home</a>
                             </li>
                             <li>
-                                <a href="/about.html">About</a>
+                                <a href="./about.html">About</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="/media.html">Media</a>
                             </li>
                             <li>
@@ -79,30 +79,26 @@
             <div id="abouttext" class="container fadeInLeft">
                 <h1>MEDIA</h1>
                 <div class="mediacontent">
-                 <div>
-     		<audio controls
-			data-info-album-art="//farm5.staticflickr.com/4050/4353986539_ec89b52698_d.jpg"
-			data-info-album-title="8874"
-			data-info-artist="Billy Murray"
-			data-info-title="Come, take a trip in my air-ship"
-			data-info-label="Edison Gold Moulded Record"
-			data-info-year="1905"
-			data-info-att="University of California, Santa Barbara Library."
-			data-info-att-link="http://cylinders.library.ucsb.edu/search.php?query=8874">
-			<source src="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.ogg" type="audio/ogg" />
-			<source src="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.mp3" type="audio/mpeg" />
-			<a href="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.mp3">cusb_cyl2985d</a>
-		</audio>
-		
-		<footer class="span12">
-			Airship Image From <a href="http://www.flickr.com/photos/mykeamend/4353986539/in/photostream/">Myke Amend</a>.
-		</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
-		<script src="./js/bootstrap-player.js"></script>
+                    <div class="media-container">
+                        <audio controls
+                               data-info-album-art="/images/album_cover_isola.png"
+                               data-info-album-title="La mia isola"
+                               data-info-artist="Roberto Petroli"
+                               data-info-title="Come, take a trip in my air-ship"
+                               data-info-label="Edison Gold Moulded Record"
+                               data-info-year="2017"
+                               data-info-att="University of California, Santa Barbara Library."
+                               data-info-att-link="http://cylinders.library.ucsb.edu/search.php?query=8874">
+                            <source src="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.ogg" type="audio/ogg" />
+                            <source src="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.mp3" type="audio/mpeg" />
+                            <a href="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.mp3">cusb_cyl2985d</a>
+                        </audio>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+                        <script src="./js/bootstrap-player.js"></script>
                     </div>   
+                </div>
             </div>
-        </div>
         </div><!-- End of #main-content -->
 
         <div id="footer">
@@ -118,6 +114,6 @@
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
-            	<script src="./js/bootstrap-player.js"> </script>
+        <script src="./js/bootstrap-player.js"> </script>
     </body>
 </html>
