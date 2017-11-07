@@ -1,456 +1,329 @@
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-
+height : 100%;
+width : 100%;
+margin : 0;
+padding : 0;
+font-family : 'Oxygen', sans-serif;
+color : #84B4C3;
+background-color : #000;
 }
 
 
-body {
-    font-size: 16px;
-    color: #fff;
-    font-family: 'Oxygen', sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #000;
-    background-size: contain;
-}
-#home {
-  background-image: url('../images/home_bg.webp');  
-    background-position: center;
-}
-#about {
-  background-image: url('../images/about.webp'); background-position: right;
+.navbar {
+background-color : #000;
+    border: 0px;
+padding-bottom: 10px;
+    
 }
 
-#media {
-    background-image: url('../images/media.webp'); 
-    background-size:cover;
+.navbar-default .navbar-brand {
+color : #84B4C3;
+font-size : 2em;
+padding-left : 30px;
 }
 
-
-
-/** HEADER **/
-
+.navbar-default .navbar-brand > a {
+color : #84B4C3;
+   
+}
 
 #header-nav {
-    position: fixed;
-    width: 100%;
-    background-color: #000;
-        border-radius: 0px;
-    display: block;
-    text-align: center;
-    margin-bottom: 0px;
-    border: 0px solid black;
-    z-index: 5;
-    
+width : 100%;
+position : fixed;
+z-index : 5;
+top : 0;
+padding-right : 10px;
 }
 
-.navbar-header {
-    display: block;
-    justify-content: center;
-    width: 100%;   
+.navbar-default .navbar-nav > li > a {
+color : #84B4C3;
 }
 
-.navbar-header li {
-    display: inline-block;
-    margin-right:10px;  
+.navbar-default .navbar-brand > a:hover {
+text-decoration : none;
 }
 
+.navbar-default .navbar-nav > li > a {
+text-align : center;
+}
 
+.navbar-default .navbar-nav > li > a:hover {
+color : #ffd800;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+color : #ffd800;
+}
+
+.nav > li {
+background-color : #000;
+z-index : 10;
+}
+
+li:last-child {
+border-bottom : none;
+}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #84B4C3;
-
+border : #84B4C3 solid 1px;
 }
-.navbar-header button.navbar-toggle {
-    clear: both;
-    margin-top: 8px;
-    
+.icon-small {
+height : 18px;
+margin : 0;
+padding : 0;
 }
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    background-color: #000;
+.icon-medium {
+height : 22px;
+margin : 0;
+padding : 0;
 }
-
-
-.navbar-default .navbar-toggle {
-    z-index: 500;
-}
-.navbar-default .navbar-toggle:focus {
-    background-color: #000; 
-}
-.navbar-default .navbar-toggle:hover {
-    background-color: #ddd; 
-}
-
-
-#logo-img {
-    background: url('../images/restaurant-logo_large.png') no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 10px 15px 10px 0;
-}
-
-
-.navbar-brand {
-    padding-top: 25px;
-}
-
-.navbar-brand h1 { /* Restaurant name */
-    font-family: 'Mukta Malar', sans-serif;
-    color: #84B4C3;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-} 
-.navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
-}
-.navbar-brand p { /* Kosher cert */
-    color: #000;
-    text-transform: uppercase;
-    font-size: .7em;
-    margin-top: 15px;
-}
-.navbar-brand p span { /* Star-K */
-    vertical-align: middle;
-}
-
-.navbar-nav {
-    float: none;
-    text-align: center;
-}
-
-.navbar-nav li {
-    display: inline-block;
-    float: none;
-}
-
-#nav-list a {
-    color: #84B4C3;;
-    font-size: 1.2em;
-}
-
-#nav-list a:focus {
-    color: #ff9800;
-}
-
-#nav-list a:hover {
-    color: #fff;
-}
-
-#nav-list a span {
-    font-size: 1em;
-}
-
-
-.icon-small
-{
-    height:18px;
-    margin:0;
-	padding:0;
-}
-
-.icon-medium
-{
-    height:22px;
-	margin:0;
-	padding:0;
-}
-
 .dropdown-open > li {
-    background-color: #000;
+background-color : #000;
 }
-
 .dropdown-menu {
-    background-color: black;
+background-color : black;
 }
 .dropdown-menu li {
-    display: block;
+display : block;
+background-color : #000;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+color : #fff;
+text-decoration : none;
+background-color : #000;
+}
+.navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+background-color : #000;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+color : #84B4C3;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+color : #ffd800;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+color : #fff;
+background-color : #84B4C3;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffd800;
     background-color: #000;
 }
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: #262626;
-    text-decoration: none;
-    background-color: #000;
-}
-
-
-/* END HEADER */
-
-/* FOOTER */
 
 #footer {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
+position : fixed;
+bottom : 0px;
+width : 100%;
+    height:40px;
+    background-color: #000;
+    z-index:10;
 }
 
 #footer ul {
-    display: flex;
-    list-style-type: none;
-     justify-content: flex-end;
-    margin-bottom: 0px;
-    margin-right: 50px;
-   
-   
+    margin-top:3px;
+display : flex;
+    justify-content: flex-end;
+list-style-type : none;
+margin-right : 50px;
 }
+
 #footer li {
-    display: inline-flex;
-    margin: 0px 20px;  
-    
+display : inline-flex;
+margin : 0 20px;
+}
+#social-right{
+    width: 36px;
+    height:100%;
+    background: red;
+    position: fixed;
 }
 
-/*___________________END FOOTER________________________________*/
-
-
-/* ______________________HOME PAGE_____________________________ */
-
-#main-content {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
+.picture {
+background-repeat : no-repeat;
+background-attachment : fixed;
+background-position : center;
+background-size : contain;
 }
 
-#overlaytext {
-    position: absolute;
-    bottom: 15%;
-    left:0;
-right:0;
-margin-left:auto;
-margin-right:auto;
-    z-index: -2;
-    
-   
+#firstpage {
+background-image : url(../images/home_bg.webp);
+  height:100%;
+}
+
+#aboutpage {
+background-image : url(../images/about.webp);
+}
+
+#mediapage {
+background-image : url(../images/media.webp);
+   }
+#gallerypage {
+    background-image : url(../images/gallery.webp);
+    height: 100%;
+}
+#galerie {
+    padding-top:300px;
+    background-image : url(../images/gallery.webp);
+    height: 100%;
+}
+
+#projectspage {
+background-image : url(../images/projects.webp);
+   }
+
+#sessionpage {
+    background-image: url(../images/session.webp);
+    height: 100%;
+}
+
+#contactpage {
+    background-image: url(../images/contact.webp);
+    height: 100%; 
+}
+#contactform {
+    width: 300px;
 }
 
 #overlaytext h1 {
-    font-family: 'Poiret One', cursive;
-    font-size:7em;
-    display: flex;
-    color: #84B4C3;
-    font-weight: 100;
-    width: 100%;
-    text-align: center;
-  justify-content: center;
+font-family : 'Poiret One', cursive;
+font-size : 10vw;
+color : #84B4C3;
+font-weight : 100;
+text-align : center;
+margin-top : 50vh;
 }
 
-       .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  }
-  @-webkit-keyframes fadeInUp {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  }
-  @keyframes fadeInUp {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  } 
-
- .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  }
-  @-webkit-keyframes fadeInLeft {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  }
-  @keyframes fadeInLeft {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  } 
-
-
-#abouttext {
-    color: #84B4C3;
-    max-width: 70%;
-    margin-top: 100px;
-    float: left;
-    height: 1200px;
+.fadeInUp {
+animation-name : fadeInUp;
+animation-duration : 1s;
+animation-fill-mode : both;
+}
+@keyframes fadeInUp {
+0% {
+opacity : 0;
+transform : translate3d(0,100%,0);
+}
+100% {
+opacity : 1;
+transform : none;
+}
+}
+.fadeInLeft {
+animation-name : fadeInLeft;
+animation-duration : 1s;
+animation-fill-mode : both;
+}
+@keyframes fadeInLeft {
+0% {
+opacity : 0;
+transform : translate3d(-100%,0,0);
+}
+100% {
+opacity : 1;
+transform : none;
+}
+    
 }
 
-#abouttext .content {
-     background-color:black;
+#contenttext {
+color : #84B4C3;
+margin-top : 200px;
+float:left;
+width:70%;
+ }
+
+.content {
+background-color: #000;
     opacity: 0.8;
 }
-#abouttext h1 {
-    margin-bottom: 50px;
-    font-family: 'Poiret One', cursive;
-    font-size: 5em;
-}
-#abouttext p {
-    font-size: 1.4em;
-       font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-    margin-top: 20px;
-     z-index: -5;
 
+#nobg > content{
+  background-color: rgba (0 0 0 0); 
+  
+}
+
+#contenttext h1 {
+font-family : 'Poiret One', cursive;
+font-size : 5em;
+}
+
+#contenttext p {
+font-size : 1.3em;
+font-family : sans-serif;
+font-weight : 100;
+margin-top : 20px;
 }
 
 .content {
-    padding:10px;
-}
-
-/* _____________________END HOME PAGE__________________________ */
-
-
-
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-    
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-    /* Header */
-    
-    /* End Header */
-
-    /* Home Page */
-    
-    /* End Home Page */
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Home Page */
-    
-    /* End Home Page */
-}
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-    /* Header */
-    .navbar-brand {
-        padding-top: 10px;
-        height: 80px;
-    }
-    .navbar-brand h1 { /* Restaurant name */
-        padding-top: 10px;
-        font-size: 5vw; /* 1vw = 1% of viewport width */
-    }
-    .navbar-brand p { /* Kosher cert */
-        font-size: .6em;
-        margin-top: 12px;
-    }
-    .navbar-brand p img { /* Star-K */
-        height: 20px;
-    }
-    
-    .navbar-nav li {
-    display:block;
-    float: none;
-}
-    
-    #collapsable-nav a { /* Collapsed nav menu text */
-        font-size: 1.2em;
-        text-align: center;
-              
-        
-    }
-    #collapsable-nav a span { /* Collapsed nav menu glyph */
-        font-size: 1em;
-        margin-right: 5px;
-    }
-    
-    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-     background-color: #000;
-}
-    #abouttext {
-    color: #84B4C3;
-        position: absolute;
-    max-width: 90%;
-    margin-top: 250px;
-        z-index: -5;
-
-   }
-    
-    #abouttext h1{
-        font-size: 4em;
-    }
-    
-
-
-    /* End Header */
-
-    /* Footer */
-
-    /* End Footer */
-
-    /* Home Page */
+padding: 10px;
+width: 80%;
+height: auto;
 }
 
 
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-    /* Header */
-    .navbar-brand h1 { /* Restaurant name */
-        padding-top: 5px;
-        font-size: 6vw;
-    }
-    /* End Header */
+@media (max-width:767px) {
+.navbar-brand {
+padding-top : 10px;
+height : 80px;
+}
+    
+.navbar-default .navbar-brand {
+margin-top: 5px;
+}
+    
+    
+.navbar-nav li {
+display : block;
+float : none;
+}
+#collapsable-nav li {
+display : block;
+float : none;
+}
+#collapsable-nav a {
+font-size : 1.2em;
+text-align : center;
+}
+#collapsable-nav a span {
+font-size : 1em;
+margin-right : 5px;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+background-color : #000;
+}
+    #footer ul {
+    justify-content: center;
 
-    /* Home page */
-    #menu-tile, #specials-tile {
-        width: 280px;
-        margin: 0 auto 15px;
+}
+    #contenttext h1 {
+        font-size: 10vw;
     }
-
-    .col-xxs-12 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
+    #contenttext {
         width: 100%;
     }
+    .content {
+        width: 100%;
+    }
+
 }
 
 
 
+@media (max-width:575px)
+    
+    
+    
+@media (min-width:768px) and (max-width:908px) {
+.parent-class .navbar-collapse.collapse {
+display : none;
+}
+.parent-class .navbar-collapse.collapse.in {
+display : block;
+}
+.parent-class .navbar-header .collapse, .navbar-toggle {
+display : block;
+}
+.parent-class .navbar-header {
+float : none;
+}
+}

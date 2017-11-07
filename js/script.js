@@ -19,13 +19,13 @@ $(document).ready(function(){
 		var spanNavSel = $('#lanNavSel');
 		var spanBtnSel = $('#lanBtnSel');
 
-		imgBtnSel.attr("src",itaImgLink);
+		imgBtnSel.attr("src",engImgLink);
 		imgBtnIta.attr("src",itaImgLink);
 		imgBtnEng.attr("src",engImgLink);
 		imgBtnDeu.attr("src",deuImgLink);
 		imgBtnFra.attr("src",fraImgLink);
 
-		imgNavSel.attr("src",itaImgLink);
+		imgNavSel.attr("src",engImgLink);
 		imgNavIta.attr("src",itaImgLink);
 		imgNavEng.attr("src",engImgLink);
 		imgNavDeu.attr("src",deuImgLink);
@@ -34,12 +34,12 @@ $(document).ready(function(){
 		$( ".language" ).on( "click", function( event ) {
 			var currentId = $(this).attr('id');
 
-			if(currentId == "navIta") {
-				imgNavSel.attr("src",itaImgLink);
-				spanNavSel.text("ITA");
-			} else if (currentId == "navEng") {
+			if(currentId == "navEng") {
 				imgNavSel.attr("src",engImgLink);
 				spanNavSel.text("ENG");
+			} else if (currentId == "navIta") {
+				imgNavSel.attr("src",itaImgLink);
+				spanNavSel.text("ITA");
 			} else if (currentId == "navDeu") {
 				imgNavSel.attr("src",deuImgLink);
 				spanNavSel.text("DEU");
@@ -48,11 +48,11 @@ $(document).ready(function(){
 				spanNavSel.text("FRA");
 			}
 
-			if(currentId == "btnIta") {
-				imgBtnSel.attr("src",itaImgLink);
-				spanBtnSel.text("ITA");
-			} else if (currentId == "btnEng") {
+			if(currentId == "btnEng") {
 				imgBtnSel.attr("src",engImgLink);
+				spanBtnSel.text("ITA");
+			} else if (currentId == "btnIta") {
+				imgBtnSel.attr("src",itaImgLink);
 				spanBtnSel.text("ENG");
 			} else if (currentId == "btnDeu") {
 				imgBtnSel.attr("src",deuImgLink);
@@ -64,3 +64,5 @@ $(document).ready(function(){
 			
 		});
 });
+
+
