@@ -177,6 +177,7 @@ background-image : url(../images/media.webp);
    }
 #calendarpage{
     background-image : url(../images/calendar.webp);
+   
 }
 #gallerypage {
     background-image : url(../images/gallery.webp);
@@ -567,8 +568,7 @@ height : 80px;
 .navbar-default .navbar-brand {
 margin-top: 5px;
 }
-    
-    
+     
 .navbar-nav li {
 display : block;
 float : none;
